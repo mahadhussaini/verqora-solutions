@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Clock, Cpu } from 'lucide-react';
+import { CheckCircle2, Clock, Cpu, Layers, ShieldCheck, Wrench } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const reasons = [
@@ -18,6 +18,21 @@ const reasons = [
     icon: CheckCircle2,
     title: 'Skilled Dev Team',
     description: 'Experienced frontend, backend, and UX talent.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Security First',
+    description: 'Secure development practices, audits, and compliance readiness.',
+  },
+  {
+    icon: Layers,
+    title: 'Scalable Architecture',
+    description: 'Future-proof designs built for load, growth, and maintenance.',
+  },
+  {
+    icon: Wrench,
+    title: 'Continuous Improvement',
+    description: 'OSHQA cycles, detailed tracking, and iterative performance gains.',
   },
 ];
 

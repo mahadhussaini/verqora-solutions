@@ -1,6 +1,6 @@
 'use client';
 
-import { Code2, Layers, ShieldCheck, Wrench } from 'lucide-react';
+import { CheckCircle2, Code2, Cpu, Layers, ShieldCheck, Wrench } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
@@ -8,21 +8,25 @@ const services = [
     icon: Code2,
     title: 'Web Development',
     description: 'Fast, responsive, and professional websites with modern tooling.',
+    points: ['SEO-friendly markup', 'Mobile-first design', 'Accessibility compliant'],
   },
   {
     icon: Layers,
     title: 'Frontend Development',
     description: 'Modern UI/UX using React, Next.js, and latest frameworks.',
+    points: ['Component libraries', 'State management', 'UX performance optimization'],
   },
   {
     icon: ShieldCheck,
     title: 'Backend Development',
     description: 'Secure, scalable systems with APIs and database integrations.',
+    points: ['REST/GraphQL API design', 'Postgres, MySQL, MongoDB', 'Authentication & RBAC'],
   },
   {
     icon: Wrench,
     title: 'Bug Fixing & Optimization',
     description: 'Improve performance and resolve issues in existing systems.',
+    points: ['Code audits and remediation', 'Database query tuning', 'Performance metrics tracking'],
   },
 ];
 
@@ -66,6 +70,16 @@ export default function Services() {
                 </div>
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                 <p className="mt-2 text-sm text-slate-300">{item.description}</p>
+                {item.points && (
+                  <ul className="mt-3 space-y-1 text-sm text-slate-300">
+                    {item.points.map(point => (
+                      <li key={point} className="flex items-start gap-2">
+                        <span className="mt-0.5 inline-flex h-1.5 w-1.5 rounded-full bg-brand-400" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </motion.article>
             );
           })}
