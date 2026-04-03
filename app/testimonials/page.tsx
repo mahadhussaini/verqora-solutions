@@ -1,7 +1,16 @@
 const testimonials = [
-  { quote: 'Professional team delivering quality work with excellent communication.', author: 'Happy Client' },
-  { quote: 'Highly recommended for modern web development projects.', author: 'Satisfied Customer' },
-  { quote: 'Fast delivery and continuous support throughout the project.', author: 'Return Client' },
+  {
+    quote: 'Working with Verqora Solutions on our client web platform was outstanding. The team was responsive, solved complex bugs, and delivered QR and calendar features seamlessly with strong communication throughout.',
+    author: 'E-commerce Director, Global Startup',
+  },
+  {
+    quote: 'Verqora Solutions consistently delivers high-quality work and transparent collaboration. They improved performance across our site, introduced reliable automation flows, and made cross-team coordination effortless.',
+    author: 'Product Lead, Fintech Services',
+  },
+  {
+    quote: 'Verqora’s engineering team showed excellent professionalism and problem-solving. They fixed hard issues quickly, optimized speed metrics significantly, and kept customers informed every step of the way.',
+    author: 'Operations Manager, SaaS Platform',
+  },
 ];
 
 export const metadata = {

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -27,19 +28,19 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-slate-900/70 backdrop-blur-xl border-b border-slate-500/40">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6">
-        <a href="#home" className="flex items-center gap-4 text-2xl font-bold tracking-tight text-white">
+        <Link href="/" className="flex items-center gap-4 text-2xl font-bold tracking-tight text-white">
           <div className="relative h-16 w-16 sm:h-18 sm:w-18 md:h-20 md:w-20 overflow-visible">
             <div className="absolute inset-0 scale-[1.9] sm:scale-[2.1] md:scale-[2.4] origin-left">
               <Image src="/logo-white.png" alt="Verqora Logo" fill sizes="150px" style={{ objectFit: 'contain' }} />
             </div>
           </div>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-10 md:flex">
           {links.map(link => (
-            <a key={link.href} href={link.href} className={linkClass(link.href)}>
+            <Link key={link.href} href={link.href} className={linkClass(link.href)}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -55,7 +56,7 @@ export default function Navbar() {
       <div className={`md:hidden ${mobileOpen ? 'block' : 'hidden'} border-t border-slate-400/20 bg-slate-900/90`}>
         <div className="flex flex-col gap-2 p-4">
           {links.map(link => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className={
@@ -66,7 +67,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -75,3 +75,17 @@ npm run dev
 - Keep `.env` secret; add `.env` to `.gitignore`
 - On production, use platform env vars (Vercel/AWS/Azure)
 - Update `SENDGRID_*` values when ready for real email
+
+## Recent updates
+
+- Portfolio now showcases 6 featured projects with full case study routes:
+  - `focusly-ai-agent`
+  - `crm-erp-platform`
+  - `memrise-clone`
+  - `closette-social-platform`
+  - `formify-builder`
+  - `nutri-ai-assistant`
+
+- Each case study includes image, live link, GitHub link, tech stack, results, and lightbox-style screenshot interaction.
+
+- Testimonials page is updated with 3 Verqora Solutions client testimonials (e-commerce, fintech, SaaS).
